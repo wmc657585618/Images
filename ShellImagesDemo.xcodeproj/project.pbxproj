@@ -13,6 +13,10 @@
 		1C5C03C0201DA7DA0093CC64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C5C03BF201DA7DA0093CC64 /* Assets.xcassets */; };
 		1C5C03C3201DA7DA0093CC64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C5C03C1201DA7DA0093CC64 /* LaunchScreen.storyboard */; };
 		1C5C03C6201DA7DA0093CC64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5C03C5201DA7DA0093CC64 /* main.m */; };
+		1C5C03CF201DA8CF0093CC64 /* UIImage+Assets.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5C03CE201DA8CF0093CC64 /* UIImage+Assets.m */; };
+		1C5C03D5201DAD290093CC64 /* BundleImages1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C5C03D2201DAD280093CC64 /* BundleImages1.png */; };
+		1C5C03D6201DAD290093CC64 /* BundleImages2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C5C03D3201DAD280093CC64 /* BundleImages2.png */; };
+		1C5C03D9201DAE780093CC64 /* UIImage+Bundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5C03D8201DAE780093CC64 /* UIImage+Bundle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,12 @@
 		1C5C03C2201DA7DA0093CC64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C5C03C4201DA7DA0093CC64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C5C03C5201DA7DA0093CC64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1C5C03CD201DA8CF0093CC64 /* UIImage+Assets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Assets.h"; sourceTree = "<group>"; };
+		1C5C03CE201DA8CF0093CC64 /* UIImage+Assets.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Assets.m"; sourceTree = "<group>"; };
+		1C5C03D2201DAD280093CC64 /* BundleImages1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BundleImages1.png; sourceTree = "<group>"; };
+		1C5C03D3201DAD280093CC64 /* BundleImages2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BundleImages2.png; sourceTree = "<group>"; };
+		1C5C03D7201DAE780093CC64 /* UIImage+Bundle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Bundle.h"; sourceTree = "<group>"; };
+		1C5C03D8201DAE780093CC64 /* UIImage+Bundle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Bundle.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +68,15 @@
 		1C5C03B5201DA7DA0093CC64 /* ShellImagesDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1C5C03D0201DAD280093CC64 /* BundleImages */,
 				1C5C03B6201DA7DA0093CC64 /* AppDelegate.h */,
 				1C5C03B7201DA7DA0093CC64 /* AppDelegate.m */,
 				1C5C03B9201DA7DA0093CC64 /* ViewController.h */,
 				1C5C03BA201DA7DA0093CC64 /* ViewController.m */,
+				1C5C03CD201DA8CF0093CC64 /* UIImage+Assets.h */,
+				1C5C03CE201DA8CF0093CC64 /* UIImage+Assets.m */,
+				1C5C03D7201DAE780093CC64 /* UIImage+Bundle.h */,
+				1C5C03D8201DAE780093CC64 /* UIImage+Bundle.m */,
 				1C5C03BC201DA7DA0093CC64 /* Main.storyboard */,
 				1C5C03BF201DA7DA0093CC64 /* Assets.xcassets */,
 				1C5C03C1201DA7DA0093CC64 /* LaunchScreen.storyboard */,
@@ -69,6 +84,15 @@
 				1C5C03C5201DA7DA0093CC64 /* main.m */,
 			);
 			path = ShellImagesDemo;
+			sourceTree = "<group>";
+		};
+		1C5C03D0201DAD280093CC64 /* BundleImages */ = {
+			isa = PBXGroup;
+			children = (
+				1C5C03D2201DAD280093CC64 /* BundleImages1.png */,
+				1C5C03D3201DAD280093CC64 /* BundleImages2.png */,
+			);
+			path = BundleImages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -81,6 +105,7 @@
 				1C5C03AF201DA7DA0093CC64 /* Sources */,
 				1C5C03B0201DA7DA0093CC64 /* Frameworks */,
 				1C5C03B1201DA7DA0093CC64 /* Resources */,
+				1C5C03CC201DA85B0093CC64 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -131,19 +156,39 @@
 			files = (
 				1C5C03C3201DA7DA0093CC64 /* LaunchScreen.storyboard in Resources */,
 				1C5C03C0201DA7DA0093CC64 /* Assets.xcassets in Resources */,
+				1C5C03D6201DAD290093CC64 /* BundleImages2.png in Resources */,
 				1C5C03BE201DA7DA0093CC64 /* Main.storyboard in Resources */,
+				1C5C03D5201DAD290093CC64 /* BundleImages1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C5C03CC201DA85B0093CC64 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/ShellImages.sh\"\n\"${SRCROOT}/BundleImages.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1C5C03AF201DA7DA0093CC64 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C5C03D9201DAE780093CC64 /* UIImage+Bundle.m in Sources */,
 				1C5C03BB201DA7DA0093CC64 /* ViewController.m in Sources */,
 				1C5C03C6201DA7DA0093CC64 /* main.m in Sources */,
+				1C5C03CF201DA8CF0093CC64 /* UIImage+Assets.m in Sources */,
 				1C5C03B8201DA7DA0093CC64 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,6 +8,10 @@
 
 #import "ViewController.h"
 
+#import "UIImage+Assets.h"
+
+#import "UIImage+Bundle.h"
+
 @interface ViewController ()
 
 @end
@@ -16,7 +20,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    UIImageView *imageView = [[UIImageView alloc] init];
+    
+    imageView.contentMode = UIViewContentModeScaleAspectFit;
+    
+    imageView.image = [UIImage icon_1];
+    
+    imageView.frame = self.view.bounds;
+    
+    [self.view addSubview:imageView];
+    
 }
 
 
